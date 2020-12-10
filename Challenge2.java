@@ -5,6 +5,7 @@ import java.util.Scanner;
 		
 		return a + mult(a,b);
 }
+			return a;
 	public static void main(String args[]) {
 		
 	Scanner input = new Scanner(System.in);
