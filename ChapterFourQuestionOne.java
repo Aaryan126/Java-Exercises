@@ -1,31 +1,43 @@
-/*
- * ChapterFourQuestionOne.java
- * 
- * Copyright 2020 aarya <aarya@DESKTOP-BR7H0M4>
- * 
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- * 
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- * 
- * 
- */
-
-
-public class untitled {
+public class ChapterFourQuestionOne {
 	
-	public static void main (String[] args) {
+	public static void main(String args[])
+	{
+		int i = 1;
+		int a = IBIO.inputInt("Enter first number ");
+		int b = IBIO.inputInt("Enter second number ");
+		System.out.println("Press");
+		System.out.println("[1] for addition");
+		System.out.println("[2] for multiplication");
+		System.out.println("[3] for quit");
+		int num = IBIO.inputInt();
 		
+		do
+		{ 
+			if (i!=1) {
+			a = IBIO.inputInt("Enter first number ");
+			b = IBIO.inputInt("Enter second number ");
+			System.out.println("Press");
+			System.out.println("[1] for addition");
+			System.out.println("[2] for multiplication");
+			System.out.println("[3] for quit");
+			num = IBIO.inputInt();
+			}
+			i++;
+			switch (num)
+			{ case 1:
+				//a+b = num;
+				System.out.println(a + " + " + b + " = " + (a+b));
+			break;
+			case 2:
+				//a*b =num;
+				System.out.println(a + " * " + b + " = " + (a*b));
+			break;
+			case 3:
+				System.exit(0);
+			}
+//menu and switch in here
+			} while (num != 3);
+			
 	}
 }
 

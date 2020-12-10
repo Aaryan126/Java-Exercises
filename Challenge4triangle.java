@@ -1,13 +1,11 @@
 import java.util.*;
 public class Challenge4triangle {
 	
-	public static int tri(int n) {
-	
-	int ans = 1; 
-	int m = 1;
-	
-	ans = n*(n+1)/2;
-	return ans;
+	public static int tri(int t) {
+		if( t == 1 )
+			return t;
+		
+		return t + tri( t-1 );
 	} 
 	public static void main (String args[]) {
 	Scanner input = new Scanner(System.in);

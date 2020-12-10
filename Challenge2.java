@@ -1,11 +1,19 @@
 import java.util.Scanner;
 	public class Challenge2 {
 				
-	public static int mult(int a, int b) {
+	public static int mult(int a, int b) 
+	{
 		
-		return a + mult(a,b);
-}
+		if( b == 1 )
+		{
 			return a;
+		}
+		else {
+			
+		return a + mult(a,b-1);
+	}
+		
+	}
 	public static void main(String args[]) {
 		
 	Scanner input = new Scanner(System.in);
