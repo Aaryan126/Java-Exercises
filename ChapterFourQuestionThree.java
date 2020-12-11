@@ -6,16 +6,17 @@ public class ChapterFourQuestionThree {
 	int num = IBIO.inputInt("Enter a number: ");
 	int ans = x*x + y*y; 
 	
-	while(ans <= num) {
+	mainLoop : while(ans <= num) {
 		if (ans == num) {
 			System.out.println("Possible");
-			System.exit(0);
+			break mainLoop;
 			}
 		x = x+1;
 		y = y+1;
 		ans = x*x + y*y; 
 		}
-	System.out.println("Impossible");
+		System.exit(0);
+		System.out.println("Impossible");
 	}
 }
 
